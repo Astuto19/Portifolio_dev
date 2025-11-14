@@ -271,4 +271,43 @@ footer{
   .about{flex-direction:column; gap:18px; padding:28px 5%;}
   .card-thumb{height:140px;}
 }
+/* ============================
+   HEADER RESPONSIVO
+   ============================ */
+@media (max-width: 768px) {
+
+  /* Permite quebrar linha */
+  header {
+    height: auto;
+    padding: 14px 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  /* Logo + Nome um abaixo do outro */
+  .brand {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .brand h1 {
+    font-size: 1.1rem;
+  }
+
+  /* Menu centralizado e com espaçamento */
+  nav {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 0.95rem;
+    padding: 6px 6px;
+  }
+}
+
 
